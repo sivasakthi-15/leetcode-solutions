@@ -3,14 +3,12 @@ class Solution {
 
         int totalSum = 0;
 
-        // Calculate total sum
         for (int num : nums) {
             totalSum += num;
         }
 
         int leftSum = 0;
 
-        // Find pivot index
         for (int i = 0; i < nums.length; i++) {
 
             int rightSum = totalSum - leftSum - nums[i];
